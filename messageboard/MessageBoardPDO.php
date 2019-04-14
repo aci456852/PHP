@@ -5,7 +5,7 @@ class MessageBoardPDO
     private $pdo;
     
     public function __construct() {
-        $this->pdo = new PDO("mysql:host=127.0.0.1;dbname=message_board", "root", 'root');
+        $this->pdo = new PDO("mysql:host=127.0.0.1;dbname=message_board", "root", "123456");
     }
     
     public function __destruct() {
