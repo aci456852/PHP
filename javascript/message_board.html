@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="J_messages"></div>
+	<input type="text" class="J_input">
+	<button class="J_submit">提交</button>
+</body>
+<script>
+	document.querySelector(".J_submit").addEventListener('click',function(event){
+		let message=document.querySelector(".J_input").value;
+		let newDiv=document.createElement('div');
+		newDiv.append(document.createTextNode(message));
+		document.querySelector(".J_messages").append(newDiv);
+		document.querySelector(".J_input").value="";
+	});
+</script>
+</html>
